@@ -1,8 +1,9 @@
 body{
-	background: url("images/backgrounds/dark-suede.png");
+	background: url("images/backgrounds/background.jpg");
 	background-size: cover;
-	color: white;
+	padding-top: 70px;
 	text-align: center;
+	color: white;
 }
 
 #Bio{

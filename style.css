@@ -1,9 +1,9 @@
 body{
+	background: url("images/backgrounds/Spring Break 7.jpg");
+	background-size: cover;
 	padding-top: 70px;
 	text-align: center;
 	color: white;
-	background: url("images/backgrounds/Spring Break 7.jpg");
-	background-size: cover;
 }
 
 h5{
