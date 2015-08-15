@@ -36,8 +36,17 @@ h1,h2,h5,p{
 	color: green;
 }
 
+/* I took this out because the menu is hard to read in mobile mode.
+ I will renable it when I figure out a fix.
+
 .navbar-fixed-top {
    background-color: rgba(245, 245, 245, 0.6);
+}
+*/
+.footer{
+		position: static;
+		padding-bottom: 0;
+		width: 100%;
 }
 
 @media screen and (min-width:701px){
