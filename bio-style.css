@@ -6,22 +6,10 @@ body{
 }
 
 h4{
-	color: blue;
+	color: rgb(0,255,255);
 }
 
-h1{
-	color: white;
-}
-
-h2{
-	color: white;
-}
-
-h5{
-	color: white;
-}
-
-p{
+h1,h2,h5,p{
 	color: white;
 }
 
