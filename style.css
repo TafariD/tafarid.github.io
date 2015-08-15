@@ -31,7 +31,14 @@ h1,h2,h5,p{
    background-color: rgba(245, 245, 245, 0.6);
 }
 
-.navbar .nav > li > a, .navbar .nav > li > a:first-letter {
+.footer{
+		position: fixed;
+		text-align: center;
+		bottom: 0px;
+		width: 100%;
+}
+
+.navbar .nav-collapse .nav {
 color:          lightgray;
 text-shadow:    none;
 }
