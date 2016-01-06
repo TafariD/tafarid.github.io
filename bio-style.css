@@ -17,6 +17,14 @@ h1,h2,h5,p{
 	text-align: center;
 }
 
+#Backlit{
+	text-align: center;
+	border: solid;
+	border-color: black;
+	background-color: black;
+	opacity: 50%;
+}
+
 #end{
 	border: solid;
 	border-color: white;
