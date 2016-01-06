@@ -1,6 +1,7 @@
 body{
 	background: url("images/backgrounds/Spring Break 7.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
 	padding-top: 70px;
 	text-align: center;
 }

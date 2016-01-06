@@ -1,6 +1,7 @@
 body{
-	background: url("images/backgrounds/motherboard-computer.jpg");
+	background: url("images/backgrounds/motherboard-computer.jpg") fixed;
 	background-size: cover;
+	background-repeat: no-repeat;
 	padding-top: 70px;
 	text-align: center;
 }
@@ -22,7 +23,6 @@ h1,h2,h5,p{
 	border: solid;
 	border-color: black;
 	background-color: black;
-	opacity: 50%;
 }
 
 #end{
