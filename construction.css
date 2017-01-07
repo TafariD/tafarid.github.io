@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300|Megrim);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+#intro {
+  padding-top: 2em;
+}
+
+body {
+  background: #262626;
+  color: deepSkyBlue;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 259px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 220px) {
+  h1 {
+    display: none;
+  }
+}
+
+h1,
+h2 {
+  color: deepPink;
+  font-family: "Megrim", cursive;
+}
+
+h2 {
+  margin-bottom: 0.1875rem;
+}
+
+main > section {
+  display: inline-block;
+  margin: 0 1rem;
+}
