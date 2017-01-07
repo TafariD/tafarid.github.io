@@ -17,6 +17,29 @@ h1,h2,p{
 	color: white;
 }
 
+#loading{
+	width:50px;
+	height: 50px;
+	border: 5px solid #ccc;
+	border-top-color: #ff6a00;
+	border-radius: 100%;
+	/*centering*/
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	/*animation!*/
+	animation: round 1.4s ease infinite;
+}
+
+@keyframes round{
+	from{transform: rotate(0deg)}
+	to{transform: rotate(360deg)}
+}
+
+
 #below_pic{
 	width: 38%;
 	margin: 0 auto;
@@ -36,7 +59,6 @@ h1,h2,p{
 .navbar-fixed-top {
    background-color: rgba(245, 245, 245, 0.6);
 }
-*/
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     height:400px;
@@ -46,6 +68,7 @@ h1,h2,p{
 		position: static;
 		width: 100%;
 }
+
 
 @media screen and (min-width:701px){
 	img {
@@ -61,3 +84,4 @@ h1,h2,p{
 			height: auto;
 	}
 }
+*/
