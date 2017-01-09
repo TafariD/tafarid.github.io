@@ -10,6 +10,18 @@ body{
 	background-attachment: fixed;
 }
 
+.box {
+	min-height: 100%;
+	margin: 0 auto -30px; /* the bottom margin is the negative value of the footer's height */
+	position: relative;
+	padding-bottom: 60px;
+}
+
+.box:after {
+  content: "";
+  display: block;
+}
+
 h5{
 	position: fixed;
 	bottom: 0;
@@ -73,7 +85,6 @@ h1,h2,p{
     position: absolute; 
     width: 180px;
     height: 180px;
-    /* WHY WON'T THE GOD DAM JPG SHOW ON GITHUB */
     background: url(images/myself/me.jpg) no-repeat;
     background-size: 180px 180px;
     margin: auto; 
@@ -145,6 +156,19 @@ inset 0 0 0 10px  rgba(0,0,255,.2);
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+@media all and (max-height: 700px) {
+
+	.profilepicture{
+		margin-top: 60px;
+	}
+
+	.pulse1, .pulse2 {
+		margin-top: 50px;
+
+	}
+	
 }
 
 @-webkit-keyframes pulsejg1 {
@@ -446,6 +470,15 @@ a {
    font-size: 26px;
 }
 
+@media all and (max-height: 700px) {
+
+	.menu{
+		margin-top:150px;
+	}
+	
+}
+
+
 .menu-item:hover {
    background: #EEEEEE;
    color: #3290B1;
@@ -684,13 +717,31 @@ a p {
    color: #62C3E4;
 }
 
+.push, .box:after{
+	height: 30px;
+}
+
 .credit {
+   clear: both;
    margin: 24px 20px 0px 40px;
    text-align: left;
+   position: absolute;
    color: #EEEEEE;
+   height: 75px;
+   overflow: inherit;
+}
 
-   position: fixed;
-   bottom:10px;
+@media all and (max-height: 700px) {
+	.credit{
+		top:600px;
+	}
+	
+}
+
+@media all and (min-height: 700px) {
+	.credit{
+		bottom:10px;
+	}
 }
 
 .credit a {
