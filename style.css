@@ -73,6 +73,7 @@ h1,h2,p{
     position: absolute; 
     width: 180px;
     height: 180px;
+    /* WHY WON'T THE GOD DAM JPG SHOW ON GITHUB */
     background: url(images/myself/me.jpg) no-repeat;
     background-size: 180px 180px;
     margin: auto; 
