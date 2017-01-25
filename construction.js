@@ -1,6 +1,6 @@
 'use strict';
 
-var deadline = 'January 23 2017 00:00:00 GMT+05:00';
+var deadline = 'January 31 2017 00:00:00 GMT+05:00';
 
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.now();
