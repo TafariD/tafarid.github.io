@@ -759,16 +759,14 @@ a p {
 
 /* ### Fold Outs ###*/
 
-.foldout{
+#foldout{
 
 	position: absolute;
-	max-height:35px; /*----------------------------------------    sets the resting height of the content area*/
-	width:70%;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:12px;
+	height:5px; /*----------------------------------------    sets the resting height of the content area*/
+	width:500px;
 	text-align: center;
-	top:50px;
+  left: 33%;
+  top: 700px;
 	border:thin black solid;
 	border-radius:8px;
 	overflow: hidden; /*---------------------------------------  hides the text outside of the div------*/
@@ -787,14 +785,12 @@ a p {
 
 }
 
-.foldout p{
+#foldout p{
 
 	margin:10px 10px 10px 10px; /*gives the text a little elbow room*/
 }
 
-.foldout:hover{
-
-	background-color:white; /* Transition-to when hovered */
+#foldout:hover{
 
 	max-height:1000px;      /* this value must be set for this to work could be 1000 100000 1000000 */
 
