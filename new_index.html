@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" href="images/misc/animated-pink-blue-elephant-waving.gif">
-  <script src="googtrack.js"></script>
   <script src="loading.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js""></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <script src="googtrack.js"></script>
   <title>Tafari Duncan's GitHub</title>
 </head>
 <body onload="hideloader()">
@@ -36,7 +38,7 @@
         <span class="lines line-3"></span>
       </label>
 
-       <a href="#" onclick="document.getElementById('foldout').setAttribute('style', 'max-height: 1000px;');" class="menu-item blue"> 
+       <a href="#" id="show-hidden-menu" class="menu-item blue"> 
           <i class="fa fa-male"></i>
           <p class="imgDesc">My Bio</p>
        </a>
@@ -65,7 +67,7 @@
 <!-- Really cool code for progress bar from https://codepen.io/AllThingsSmitty/pen/zxGyXd, not used
 but I might add it later! -->
 
-<div id="foldout">
+<div class="hidden-menu" style="display: none;">
 <br><br>
 This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy littlespace saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy little space saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy littlespace saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...
 <br><br>
@@ -80,3 +82,13 @@ This is the content area for my happy little fold-outs that I am going to add to
 </body>
 
 </html>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#show-hidden-menu').click(function() {
+    $('.hidden-menu').slideToggle("slow");
+    document.getElementById('welcomeDiv').style.display = "block";
+    // Alternative animation for example
+    // slideToggle("fast");
+  });
+});</script>

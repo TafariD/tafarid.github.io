@@ -759,10 +759,10 @@ a p {
 
 /* ### Fold Outs ###*/
 
-#foldout{
+.hidden-menu{
 
 	position: absolute;
-	height:5px; /*----------------------------------------    sets the resting height of the content area*/
+	height:500px; /*----------------------------------------    sets the resting height of the content area*/
 	width:500px;
 	text-align: center;
   left: 33%;
@@ -785,12 +785,12 @@ a p {
 
 }
 
-#foldout p{
+.hidden-menu p{
 
 	margin:10px 10px 10px 10px; /*gives the text a little elbow room*/
 }
 
-#foldout:hover{
+.hidden-menu:hover{
 
 	max-height:1000px;      /* this value must be set for this to work could be 1000 100000 1000000 */
 
