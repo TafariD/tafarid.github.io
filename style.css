@@ -795,6 +795,10 @@ a p {
 
 }
 
+.hidden-bio-content #close-btn{
+	text-align: center;
+}
+
 .hidden-bio p{
 
 	margin:10px 10px 10px 10px; /*gives the text a little elbow room*/

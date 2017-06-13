@@ -79,7 +79,10 @@ but I might add it later! -->
       <p>In the summer of 2017 I moved to New York City to start work as a Software Engineer, and I
       am not currently looking for work, but I am always open to networking opportunties! Please
       contact me via email if you would like to learn more!</p>
+      <br>
+      <span style="text-align:center"><button type="button" class="btn btn-secondary" id="close-btn">Close</button></span>
       </div>
+
     </div>
 
 <!-- CREDIT / CITIATIONS
@@ -98,6 +101,13 @@ but I might add it later! -->
 
         // Alternative animation for example
         // slideToggle("fast");
+      });
+    });</script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#close-btn').click(function() {
+        $('.hidden-bio').slideToggle("slow");
       });
     });</script>
 </body>
