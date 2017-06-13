@@ -778,6 +778,13 @@ a p {
 	padding-bottom: 50px;
 }
 
+@media only screen and (max-width: 520px) {
+    .hidden-bio {
+        width: auto;
+				top: 500px;
+    }
+}
+
 .hidden-bio-content{
 
 	border:thin black solid;
