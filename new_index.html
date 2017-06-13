@@ -7,10 +7,10 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" href="images/misc/animated-pink-blue-elephant-waving.gif">
   <script src="loading.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js""></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
   <script src="googtrack.js"></script>
-  <title>Tafari Duncan's GitHub</title>
+  <title>Tafari Duncan's Page</title>
 </head>
 <body onload="hideloader()">
 
@@ -22,13 +22,13 @@
 </div>
 
 <!-- Main Picture, Code Sourced from https://codepen.io/jascha/pen/lekgC -->
- 
+
   <div class="pulse1"></div>
   <div class="pulse2"></div>
   <div class="profilepicture"></div>
 
   <!-- Super cool nav bar, Code Sourced from https://codepen.io/lbebber/pen/LELBEo-->
-    
+
 
     <nav class="menu">
        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
@@ -38,27 +38,27 @@
         <span class="lines line-3"></span>
       </label>
 
-       <a href="#" id="show-hidden-menu" class="menu-item blue"> 
+       <a id="show-hidden-bio" class="menu-item blue">
           <i class="fa fa-male"></i>
           <p class="imgDesc">My Bio</p>
        </a>
-       <a href="#" class="menu-item green"> 
+       <a href="Tafari.pdf" class="menu-item green">
           <i class="fa fa-file-pdf-o"></i>
           <p class="imgDesc">Resume</p>
        </a>
-       <a href="#" class="menu-item red">
+       <a data-toggle="tooltip" title="Shhh, it's not ready yet!!!" class="menu-item red">
           <i class="fa fa-question"></i>
-          <p class="imgDesc">Mystery</p>
+          <p class="imgDesc">TBA</p>
        </a>
-       <a href="#" class="menu-item purple"> 
+       <a href="https://github.com/TafariD" class="menu-item purple">
           <i class="fa fa-github"></i>
           <p class="imgDesc">My Github</p>
        </a>
-       <a href="#" class="menu-item orange">
+       <a href="mailto:contact@tafarid.33mail.com?Subject=I%20saw%20your%20website!" class="menu-item orange">
           <i class="fa fa-envelope"></i>
           <p class="imgDesc">Email me!</p>
        </a>
-       <a href="#" class="menu-item lightblue">
+       <a href="https://www.linkedin.com/in/tafariduncan/" class="menu-item lightblue">
           <i class="fa fa-linkedin"></i>
           <p class="imgDesc">Linkedin</p>
        </a>
@@ -67,28 +67,39 @@
 <!-- Really cool code for progress bar from https://codepen.io/AllThingsSmitty/pen/zxGyXd, not used
 but I might add it later! -->
 
-<div class="hidden-menu" style="display: none;">
-<br><br>
-This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy littlespace saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy little space saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...This is the content area for my happy little fold-outs that I am going to add to my pages. They are like happy littlespace saving recipe cards for css tricks. Lets make the text in this one much longer so we can see if the transition grows with the content...
-<br><br>
-</div>
-
+    <div class="hidden-bio" style="display: none;">
+      <div class="hidden-bio-content" >
+      <br>
+      <h2>Software Developer, Rower, Film Projectionist, Adventurer</h2>
+      <br>
+      <p>Hello! My name is Tafari Ellis Duncan. I'm a proud son of Jamaican and African-American ancestry
+      from Hartford, Connecticut. I have a Bachelors of Science in Computer Science and minor in
+      Engineering Management from Tufts University. This webpage was assembled in 2016 as a sample
+      of my work and contains an updated resume as well as contact information.</p>
+      <p>In the summer of 2017 I moved to New York City to start work as a Software Engineer, and I
+      am not currently looking for work, but I am always open to networking opportunties! Please
+      contact me via email if you would like to learn more!</p>
+      </div>
+    </div>
 
 <!-- CREDIT / CITIATIONS
  Assembled based on code from "https://codepen.io/jascha/pen/lekgC" by Jascha Goltermann
  and from "https://codepen.io/jordanlachance/pen/yOJdRr" by Jordan LaChance
 -->
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#show-hidden-bio').click(function() {
+        $('.hidden-bio').slideToggle("slow");
+        console.log($('.hidden-bio').css('display'))
+        if ($('.hidden-bio').is(':visible')) {
+          $("html,body").animate({ scrollTop: 700 }, "slow");
+        }
+
+        // Alternative animation for example
+        // slideToggle("fast");
+      });
+    });</script>
 </body>
 
 </html>
-
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#show-hidden-menu').click(function() {
-    $('.hidden-menu').slideToggle("slow");
-    document.getElementById('welcomeDiv').style.display = "block";
-    // Alternative animation for example
-    // slideToggle("fast");
-  });
-});</script>
