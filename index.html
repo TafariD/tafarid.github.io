@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="construction.css">
-	<link rel="shortcut icon" href="images/misc/animated-pink-blue-elephant-waving.gif">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" href="images/misc/animated-pink-blue-elephant-waving.gif">
+  <script src="loading.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
-	<script src="googtrack.js"></script>
-
-	<title>Tafari Duncan's GitHub</title>
+  <script src="googtrack.js"></script>
+  <title>Tafari Duncan's Page</title>
 </head>
-<body>
+<body onload="hideloader()">
 
-<div id = "intro">
-  <p> 
-  Hello, and welcome to my Github page! <br> <br> 
-  I am currently in the process of updating my site, and so my old one has been taken down. <br>
-  If you came here hoping to find my resume, please check below. If you are looking to <br>
-  contact me, I can be reached at <a href="mailto:tafari.duncan@tufts.edu?Subject=Job%20Opportunity" target="_top">Tafari.Duncan@Tufts.Edu</a> </p>
-</div>
 
-<div>
-<!-- Code borrowed from https://codepen.io/ianseabrook/pen/adKmZL -->
-  <h1>Time to relaunch</h1>
-  <main id="clockdiv">
-    <section class="days">
-      <h2>D</h2>
-      <span id="days"></span>
-    </section>
-    <section class="hours">
-      <h2>H</h2>
-      <span id="hours"></span>
-    </section>
-    <section class="minutes">
-      <h2>M</h2>
-      <span id="minutes"></span>
-    </section>
-    <section class="seconds">
-      <h2>S</h2>
-      <span id="seconds"></span>
-    </section>
-  </main>
-</div>
+<!--Loading Stuff-->
 
-<br><br>
-  <a href="CS Student Tafari.pdf" class="btn btn-info" role="button">Download Resume</a>
-<br><br>
-<br><br>
+  <div id = "loading_box">
+    <div id = "loading"></div>
+  </div>
 
-  <script src="construction.js"></script>
+  <div id="titleth"><h1><br>Bonjour! Welcome to <br> Tafari Duncan's page!</h1></div>
+
+<!-- Main Picture, Code Sourced from https://codepen.io/jascha/pen/lekgC -->
+
+  <div class="pulse1"></div>
+  <div class="pulse2"></div>
+  <div class="profilepicture"></div>
+
+  <!-- Super cool nav bar, Code Sourced from https://codepen.io/lbebber/pen/LELBEo-->
+
+
+    <nav class="menu">
+       <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+       <label class="menu-open-button" for="menu-open">
+        <span class="lines line-1"></span>
+        <span class="lines line-2"></span>
+        <span class="lines line-3"></span>
+      </label>
+
+       <a id="show-hidden-bio" class="menu-item blue">
+          <i class="fa fa-male"></i>
+          <p class="imgDesc">My Bio</p>
+       </a>
+       <a href="Tafari.pdf" class="menu-item green">
+          <i class="fa fa-file-pdf-o"></i>
+          <p class="imgDesc">Resume</p>
+       </a>
+       <a data-toggle="tooltip" title="Shhh, it's not ready yet!!!" class="menu-item red">
+          <i class="fa fa-question"></i>
+          <p class="imgDesc">TBA</p>
+       </a>
+       <a href="https://github.com/TafariD" class="menu-item purple">
+          <i class="fa fa-github"></i>
+          <p class="imgDesc">My Github</p>
+       </a>
+       <a href="mailto:contact@tafarid.33mail.com?Subject=I%20saw%20your%20website!" class="menu-item orange">
+          <i class="fa fa-envelope"></i>
+          <p class="imgDesc">Email me!</p>
+       </a>
+       <a href="https://www.linkedin.com/in/tafariduncan/" class="menu-item lightblue">
+          <i class="fa fa-linkedin"></i>
+          <p class="imgDesc">Linkedin</p>
+       </a>
+    </nav>
+
+<!-- Really cool code for progress bar from https://codepen.io/AllThingsSmitty/pen/zxGyXd, not used
+but I might add it later! -->
+
+    <div class="hidden-bio" style="display: none;">
+      <div class="hidden-bio-content" >
+      <br>
+      <h2>Software Developer, Rower, Film Projectionist, Adventurer</h2>
+      <br>
+      <p>Hello! My name is Tafari Ellis Duncan. I'm a proud son of Jamaican and African-American ancestry
+      from Hartford, Connecticut. I have a Bachelors of Science in Computer Science and minor in
+      Engineering Management from Tufts University. This webpage was assembled in 2016 as a sample
+      of my work and contains an updated resume as well as contact information.</p>
+      <p>In the summer of 2017 I moved to New York City to start work as a Software Engineer, and I
+      am not currently looking for work, but I am always open to networking opportunties! Please
+      contact me via email if you would like to learn more!</p>
+      <br>
+      <div style="text-align:center"><button type="button" class="btn btn-secondary" id="close-btn">Close</button></div>
+      </div>
+
+    </div>
+
+<!-- CREDIT / CITIATIONS
+ Assembled based on code from "https://codepen.io/jascha/pen/lekgC" by Jascha Goltermann
+ and from "https://codepen.io/jordanlachance/pen/yOJdRr" by Jordan LaChance
+-->
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#show-hidden-bio').click(function() {
+        $('.hidden-bio').slideToggle("slow");
+        console.log($('.hidden-bio').css('display'))
+        if ($('.hidden-bio').is(':visible')) {
+          $("html,body").animate({ scrollTop: 700 }, "slow");
+        }
+
+        // Alternative animation for example
+        // slideToggle("fast");
+      });
+    });</script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('#close-btn').click(function() {
+        $('.hidden-bio').slideToggle("slow");
+      });
+    });</script>
 </body>
 
 </html>
